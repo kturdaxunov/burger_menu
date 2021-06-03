@@ -1,0 +1,39 @@
+// out: ../css/, outExt: .min.css
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    @media (max-width: 767px) {
+        &.lock {
+            overflow: hidden;
+        }
+    }
+}
+
+
+
+/* Header */
+@import "_header";
+
+/* Content */
+@import "_content";
+
+
+.wrapper {}
+
+.container {
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
